@@ -1,1 +1,57 @@
-/*  your css code here. If applicable */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+.card {
+    width: 300px; /* Adjust as per your requirement */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    margin: auto; /* Center the card on the page */
+}
+
+.card-image {
+    width: 100%; /* This makes the image responsive to the card's width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between image and title */
+}
+
+h1 {
+    margin-bottom: 10px; /* Space between title and price */
+}
+
+.price {
+    margin-bottom: 10px; /* Space between price and description */
+    font-weight: bold;
+}
+
+.description {
+    margin-bottom: 20px; /* Space between description and button */
+    color: #333;
+}
+
+.buy-now {
+    padding: 10px 20px;
+    background-color: #ff4e50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase; /* Optional: if you want the button text to be uppercase */
+    transition: background-color 0.3s;
+    display: block; /* Make the button a block element */
+    width: auto; /* Let the button width be determined by its content and padding */
+    margin: auto; /* Center the button */
+}
+
+.buy-now:hover {
+    background-color: #ff7a78; /* Lighter shade for hover effect */
+}
